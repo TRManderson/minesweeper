@@ -1,4 +1,11 @@
 module Minesweeper.Board
+    (
+      Board,
+      Tile,
+      RealBoard,
+      RealTile,
+      BoardOp
+    )
   where
 
 import Data.Array (Array, array, listArray)
@@ -70,12 +77,5 @@ showRealBoard b = concat . map (++ "\n") . rowsify w . elems $ charBoard
     (_, (w, h)) = bounds b
     rowsify _ [] = []
     rowsify n xs = take n xs : (rowsify n (drop n xs))
-
-
-
-
-
-
-
 
 data BoardOp = Mark (Int, Int) | Check (Int, Int)
