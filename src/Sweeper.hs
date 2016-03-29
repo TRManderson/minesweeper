@@ -1,5 +1,5 @@
-module Sweeper (step,) where
-import Board
+module Minesweeper.Sweeper (step,) where
+import Minesweeper.Board
 import System.Random
 import System.IO.Unsafe (unsafePerformIO)
 

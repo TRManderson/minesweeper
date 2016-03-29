@@ -1,4 +1,4 @@
-module Board
+module Minesweeper.Board
   where
 
 import Data.Array (Array, array, listArray)
