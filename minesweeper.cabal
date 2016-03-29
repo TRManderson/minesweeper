@@ -1,14 +1,14 @@
 name:                minesweeper
 version:             0.1.0.0
-synopsis:            Simple project template from stack
+synopsis:            An attempt at a probabilistic minesweeper solver
 description:         Please see README.md
-homepage:            http://github.com/githubuser/minesweeper#readme
+homepage:            http://github.com/TRManderson/minesweeper#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2016 Author name here
-category:            Web
+author:              Tom Manderson
+maintainer:          me@trm.io
+copyright:           2016 Tom Manderson
+category:            Game, AI
 build-type:          Simple
 cabal-version:       >=1.10
 
