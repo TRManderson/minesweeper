@@ -9,3 +9,5 @@ The approach for move selection is incredibly simple and relies on the probabili
 So far, my attempt relies on a number of factors that are not formally proven, but I'm sure I can rely on:
  - All unrevealed squares not adjacent to either an empty space or a number have equal probability
  - Unrevealed squares next to empty tiles are safe, unless they are adjacent to a number
+ - If there is an unmarked square adjacent to a 1, and it is the only unmarked square adjacent to that 1, that square is a mine
+ - If a 1 is adjacent to a mine, all other cells adjacent are definitely not mines
