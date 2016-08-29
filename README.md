@@ -17,3 +17,8 @@ So far, my attempt relies on a number of factors that are not formally proven, b
 When playing intuitively, I notice that I play like there's an advancing front. To start the game I pick an arbitrary tile, and then eliminate all cells that are guaranteed to be a mine (which form a front due to the way numbers are revealed). After that, safe cells, mines, safe cells, mines, etc until I have to pick randomly.
 
 I'm pretty sure I could model this problem as a binary program. I've seen one other constraint-based approach to mineseeper, but they used constraints as an approximation with a probabilistic approach only being used when constraints failed. That being said, when all you've got is a hammer, everything looks like a nail.
+
+# Take 2
+I think using a binary variable per cell might actually be the best option. I'd need to investigate whether the linear relaxation of the variables might give me something probability-esque that I can use as a suggested cell to click. Worth investigating tonight.
+
+I still don't really want to do this with Operations Research tools, merely because I'm familiar with them, but oh well.
